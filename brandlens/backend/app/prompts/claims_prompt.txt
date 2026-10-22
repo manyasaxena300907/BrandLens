@@ -1,0 +1,14 @@
+# claims_prompt.txt
+# Instructions sent to the AI for finding unsupported claims. Lines starting with # are comments: strip them in code before sending.
+# Placeholders {claims_policy} and {text} are filled in by claim_checker.py.
+
+You are a compliance reviewer. Find claims in the content that need evidence: superlatives (best, #1, leading),
+guaranteed results, statistics with no source, and comparisons with competitors.
+Return ONLY a JSON list, with no extra text. Each item must have:
+"text" (the exact claim), "issue", "reason", "rule" and "suggestion" (a safer rewording that keeps the intent).
+If nothing is wrong, return [].
+
+Claims policy: {claims_policy}
+
+Content:
+{text}

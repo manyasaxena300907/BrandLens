@@ -1,0 +1,52 @@
+{
+  "_comment": "rulebook_sample.json: demo brand rule book for a fictional company. Upload it on the Rule Book page to test the checks.",
+  "company": "NovaCart",
+  "tone": [
+    "professional",
+    "trustworthy",
+    "friendly but factual"
+  ],
+  "approved_terms": [
+    "customer",
+    "member",
+    "retailer"
+  ],
+  "restricted_terms": [
+    {
+      "term": "user",
+      "use": "customer",
+      "reason": "NovaCart calls the people it serves customers"
+    },
+    {
+      "term": "guaranteed",
+      "use": "designed to",
+      "reason": "Outcomes cannot be guaranteed"
+    },
+    {
+      "term": "cheap",
+      "use": "affordable",
+      "reason": "Cheap sounds low quality"
+    }
+  ],
+  "facts": [
+    {
+      "label": "active customers",
+      "aliases": [
+        "customers",
+        "clients",
+        "users"
+      ],
+      "value": 14000
+    },
+    {
+      "label": "founded",
+      "aliases": [
+        "founded",
+        "since",
+        "established"
+      ],
+      "value": 2019
+    }
+  ],
+  "claims_policy": "No unsupported superlatives (best, #1, leading, revolutionary) and no guaranteed results unless backed by evidence."
+}

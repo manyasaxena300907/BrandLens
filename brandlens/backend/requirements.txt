@@ -1,0 +1,13 @@
+# requirements.txt
+# Python packages the backend needs. Install with: pip install -r requirements.txt
+
+fastapi
+uvicorn[standard]
+pymongo
+python-dotenv
+python-multipart
+pdfplumber
+python-docx
+google-generativeai
+pyjwt
+pytest
